@@ -1,0 +1,11 @@
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\bin\Debug\netcoreapp2.0\Hacker.deps.json
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\bin\Debug\netcoreapp2.0\Hacker.runtimeconfig.json
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\bin\Debug\netcoreapp2.0\Hacker.runtimeconfig.dev.json
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\bin\Debug\netcoreapp2.0\Hacker.dll
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\bin\Debug\netcoreapp2.0\Hacker.pdb
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\obj\Debug\netcoreapp2.0\Hacker.csprojAssemblyReference.cache
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\obj\Debug\netcoreapp2.0\Hacker.csproj.CoreCompileInputs.cache
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\obj\Debug\netcoreapp2.0\Hacker.AssemblyInfoInputs.cache
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\obj\Debug\netcoreapp2.0\Hacker.AssemblyInfo.cs
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\obj\Debug\netcoreapp2.0\Hacker.dll
+C:\Users\Chad\Desktop\cSharpLecture\Hacker\obj\Debug\netcoreapp2.0\Hacker.pdb
