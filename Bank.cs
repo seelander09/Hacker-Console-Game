@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Hacker
 {
+    // Initialize bank
     public class Bank
     {
         public int Health;
@@ -12,6 +13,7 @@ namespace Hacker
             this.Health = 50;
             this.Type = "Bank";
         }
+        // these are methods for attacking. actions determine how much damage they deal.
         public int Action1()
         {
             System.Console.WriteLine("***bank action 1*** Your broke bro");

@@ -2,17 +2,13 @@ using System;
 using System.Collections.Generic;
 
 namespace Hacker
-// Im here this is live share
 {
+    // initialize HackerMan
     public class HackerMan
     {
         public int Health = 50;
         public string Type = "Hacker";
-        // public void Hackerman()
-        // {
-        //     this.Health = 50;
-        //     this.Type = "Hacker";
-        // }
+        // Actions determine how much damamge the HackerMan will do.
         public int Action1()
         {
 

@@ -10,19 +10,18 @@ namespace Hacker
             // bank > lawyer > hospital
             // school > hacker > bank
             // hospital > athlete > school,
-            // athlete Jim = new athlete();
+            
             HackerMan hacker = new HackerMan();
             Athlete athlete = new Athlete();
             Lawyer lawyer = new Lawyer();
             Bank bank = new Bank();
             School school = new School();
             Hospital hospital = new Hospital();
-            // System.Console.WriteLine(hacker.Health);
-            //
-            // hacker.Action1();
-            // school.Action1();
+            
+            // 1.) user selects target
             System.Console.WriteLine("Pick a target to go all hackivist on [1: Bank, 2: School, 3: Hospital]");
             string input1 = Console.ReadLine();
+             // whom did the user select.
             if (input1 == "1")
             {
 
@@ -39,10 +38,10 @@ namespace Hacker
                 Action_Pick(3, bank, school, hospital, hacker, athlete, lawyer);
             }
 
-
+            // 2.) enemy picks target and attack.
             System.Console.WriteLine();
-            // PickActionBank();
             HitTargetBank(PickActionBank(bank), hacker, athlete, lawyer);
+            // check if attack just exicuted killed any users people.
             bool hDeathFlag = false;
             if (hDeathFlag == false)
             {
@@ -71,6 +70,7 @@ namespace Hacker
                 }
             }
         }
+        // 1.2) have the player acter picking a target pick which action to use.
         public static void Action_Pick(int target, Bank bank, School school, Hospital hospital, HackerMan hacker, Athlete athlete, Lawyer lawyer)
         {
             if (target == 1)
@@ -156,29 +156,8 @@ namespace Hacker
                 //     System.Console.WriteLine("Follow orders ASS-HOLLLE-Poop head stupid face... also GET PITTED");
                 // }
             }
-            // System.Console.WriteLine("Pick an Action[1-4]");
-            // string input2 = Console.ReadLine();
-            // if (input2 == "1")
-            // {
-            //     tget.Health -= hacker.Action1();
-            // }
-            // if (input2 == "2")
-            // {
-            //     tget.Health -= hacker.Action2();
-            // }
-            // if (input2 == "3")
-            // {
-            //     tget.Health -= hacker.Action3();
-            // }
-            // if (input2 == "4")
-            // {
-            //     tget.Health -= hacker.Action4();
-            // }
-            // if (input2 > 4)
-            // {
-            //     System.Console.WriteLine("Follow orders ASS-HOLLLE-Poop head stupid face... also GET PITTED");
-            // }
         }
+        // 2.1) pick a random action specifically for the bank.
         static int PickActionBank(Bank bank)
         {
             Random rand = new Random();
@@ -201,6 +180,8 @@ namespace Hacker
             }
             return 0;
         }
+        // 2.2) Taking the action that was picked and applying it
+        //checks for each person you can pick if health is greater than zero then they can be attacked. iff not run function again.
         static void HitTargetBank(int attack, HackerMan hacker, Athlete athlete, Lawyer lawyer)
         {
             Random rand = new Random();
@@ -239,53 +220,5 @@ namespace Hacker
                 }
             }
         }
-
-        // static int PickActionSchool()
-        // {
-        //     Random rand = new Random();
-        //     rand = rand.Next(1, 5);
-        //     int picked = rand;
-        //     if (picked == 1)
-        //     {
-        //         selected = School.Action1();
-        //     }
-        //     if (picked == 2)
-        //     {
-        //         selected = School.Action2();
-        //     }
-        //     if (picked == 3)
-        //     {
-        //         selected = School.Action3();
-        //     }
-        //     if (picked == 4)
-        //     {
-        //         selected = School.Action4();
-        //     }
-        //     return selected;
-        // }
-        // static int PickActionHospital()
-        // {
-        //     Random rand = new Random();
-        //     rand = rand.Next(1, 5);
-        //     int picked = rand;
-        //     int selected;
-        //     if (picked == 1)
-        //     {
-        //         selected = Hospital.Action1();
-        //     }
-        //     if (picked == 2)
-        //     {
-        //         selected = Hospital.Action2();
-        //     }
-        //     if (picked == 3)
-        //     {
-        //         selected = Hospital.Action3();
-        //     }
-        //     if (picked == 4)
-        //     {
-        //         selected = Hospital.Action4();
-        //     }
-        //     return selected;
-        // }
     }
 }
